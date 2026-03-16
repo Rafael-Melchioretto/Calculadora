@@ -14,11 +14,10 @@ function apagar() {
 function calcular() {
     var visor = document.getElementById('visor');
     try{
-        // Usa a função eval() para calcular o resultado
-        // Nota: eval() pode ser perigoso com entrada não confiável
+        
         visor.value = eval(visor.value);
     } catch(error) {
-        //Se houver um erro na expressão vai mostra Erro no visor
+        
         visor.value = 'Erro'
     }
 }
